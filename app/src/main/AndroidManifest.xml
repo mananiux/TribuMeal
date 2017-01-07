@@ -21,6 +21,10 @@
         <activity
             android:name=".activities.StorefrontActivityView"
             android:label="@string/title_activity_storefront"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MealViewActivity"
+            android:label="@string/title_activity_meal_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
