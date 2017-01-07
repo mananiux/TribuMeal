@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StorefrontActivity"
+            android:name=".activities.StorefrontActivityView"
             android:label="@string/title_activity_storefront"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

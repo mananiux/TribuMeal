@@ -10,42 +10,83 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.tribumeal.StorefrontActivity"
-    tools:showIn="@layout/activity_storefront">
+    tools:context="com.tribumeal.activities.StorefrontActivityView"
+    tools:showIn="@layout/activity_storefront_view">
 
 
     <ImageView
         android:id="@+id/storeFrontCoverPhoto"
         android:layout_width="fill_parent"
-        android:layout_height="180dp"
-        android:layout_above="@+id/storeFrontName"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         app:srcCompat="@mipmap/ic_launcher"
-        android:adjustViewBounds="true" />
+        android:adjustViewBounds="true"
+        android:layout_height="120dp" />
 
     <TextView
         android:text="Storefront Name"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:textSize="24sp"
+        android:textAlignment="center"
         android:id="@+id/storeFrontName"
-
+        android:layout_below="@id/storeFrontCoverPhoto"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-
     <TableLayout
-        android:id="@+id/tableLayout"
+        android:id="@+id/upcomingMealTableLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_height="20dp"
         android:layout_below="@id/storeFrontName"
+        android:layout_above="@id/menuTableLayout"
         android:layout_centerInParent="true"
         android:orientation="horizontal"
         android:stretchColumns="0,1">
 
+        <TableRow>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher"
+                    android:text="Button 2" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meal Name"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/menuTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="0,1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TableRow>
 
@@ -110,8 +151,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                >
+                android:gravity="center">
 
 
                 <ImageButton
@@ -163,64 +203,5 @@
         </TableRow>
         </TableLayout>
 
-
-    <!--<TableRow android:background="@drawable/border">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/textView"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Favorites"-->
-                    <!--android:textAlignment="center"-->
-                    <!--android:textSize="18sp" />-->
-
-                <!--<ImageButton-->
-                    <!--android:id="@+id/imageButton"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@id/textView"-->
-                    <!--android:foregroundGravity="center"-->
-                    <!--android:src="@mipmap/ic_launcher"-->
-                    <!--android:text="Button" />-->
-
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center">-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/textView1"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Favorites"-->
-                    <!--android:textAlignment="center" />-->
-
-                <!--<ImageButton-->
-                    <!--android:id="@+id/imageButton1"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@id/textView1"-->
-                    <!--android:src="@mipmap/ic_launcher"-->
-                    <!--android:text="Button" />-->
-
-
-        <!--</TableRow>-->
-
-        <!--<TableRow>-->
-
-            <!--<ImageButton-->
-                <!--android:id="@+id/button2"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:src="@mipmap/ic_launcher"-->
-                <!--android:text="Button 2" />-->
-
-            <!--<ImageButton-->
-                <!--android:id="@+id/button4"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:src="@mipmap/ic_launcher"-->
-                <!--android:text="Button 4" />-->
-        <!--</TableRow>-->
-
-
-    <!--</TableLayout>-->
 
 </RelativeLayout>
