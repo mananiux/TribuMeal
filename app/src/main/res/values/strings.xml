@@ -3,4 +3,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_storefront">StorefrontActivity</string>
     <string name="title_activity_meal_view">MealViewActivity</string>
+    <string name="purchase_portion_string">Purchase Portion</string>
+    <string name="portions_available">(%s portions available)</string>
+    <string name="meal_ingredients_banner">Meal Ingredients</string>
+    <string name="description_of_meal_title">Description of meal</string>
+    <string name="title_activity_explore_meals">ExploreMeals</string>
+    <string name="title_activity_settings">Settings</string>
+
 </resources>

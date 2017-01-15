@@ -33,7 +33,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Description of meal"
+        android:text="@string/description_of_meal_title"
         android:layout_width="fill_parent"
         android:layout_height="80dp"
         android:textSize="12sp"
@@ -43,7 +43,7 @@
         android:id="@+id/descriptionOfMealText" />
 
     <TextView
-        android:text="Meal Ingredients"
+        android:text="@string/meal_ingredients_banner"
         android:layout_width="fill_parent"
         android:layout_height="80dp"
         android:layout_below="@id/descriptionOfMealText"
@@ -61,32 +61,6 @@
 
         <TableRow>
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                >
-
-
-                <ImageButton
-                    android:id="@+id/button9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@mipmap/ic_launcher"
-                    android:text="Button 2" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Meal Name"
-                    android:textAlignment="center"
-                    android:textSize="18sp" />
-
-
-            </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -97,7 +71,7 @@
 
 
                 <ImageButton
-                    android:id="@+id/button"
+                    android:id="@+id/buyPortionButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -105,12 +79,21 @@
                     android:text="Button 2" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/buyPortionText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Meal Name"
+                    android:text="@string/purchase_portion_string"
                     android:textAlignment="center"
                     android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/portionsAvailableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/portions_available"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
